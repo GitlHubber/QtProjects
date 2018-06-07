@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_for_doctor2</class>
+ <widget class="QDialog" name="Dialog_for_doctor2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>381</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>461</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Пациенты</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableView" name="tableView"/>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox">
+      <item>
+       <property name="text">
+        <string>Сортировать по :</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>По алфавиту А-Я</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>По алфавиту Я-А</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>По возрасту 0-9</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>По возрасту 9-0</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="sort">
+      <property name="text">
+       <string>Сортировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="find_patient">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>332</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Найти пациента</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>comboBox</tabstop>
+  <tabstop>sort</tabstop>
+  <tabstop>tableView</tabstop>
+  <tabstop>find_patient</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
